@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top left, #471069, #30c5d2);
+}
+
+.sidebar {
+    position: absolute;
+    font-family: 'Fira Sans', sans-serif;
+    background: linear-gradient(to top left, #471069, #30c5d2);
+    /* background-color: rgb(211, 210, 210); */
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -20px;
+    width: 200px;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to top left, #57ebde, #aefb2a) }
+
+  nav ul ul {
+    display: none;
+  }
+
+  nav ul ul ul li {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 200px;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f1f1f1;
+  }
+
+  nav ul ul ul ul li a {
+    padding-left: 20px;
+  }
+
+  nav ul li {
+    float: none;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+    padding: 23px;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: pink; */
+    height: 58vh;
+    width: 80vw;
+    margin: 147px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.hello {
+    font-size: 65px;
+}
+
+.name {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 40px;
+}
+
+.moreabout {
+    font-size: 29px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 23px;
+}
+
+
+.buttons {
+    margin-top: 34px;
+}
+
+.buttons button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+
+.devPic {
+    position: relative;
+  }
+  
+  .devPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask: radial-gradient(circle at center, transparent 50%, white 51%);
+  }
+  
+
+/* .devPic img {
+    height: 58vh;
+    border-radius: 50%;
+    z-index: 1;
+} */
+
+/* .devPic img {
+    height: 58vh;   
+
+} */
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #274773cb;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .social-links li {
+    margin: 0 20px;
+  }
+  .social-links a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+@media (max-width: 1400px) {
+    * {
+        /* background-color: rgb(234, 181, 181); */
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    /* .sidebar{ 
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+
+}
